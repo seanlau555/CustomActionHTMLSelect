@@ -1,8 +1,14 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {
+  SafeAreaView,
+  TouchableOpacity,
+  Text,
+  View
+} from 'react-native';
 
-// import { WebView } from 'react-native-webview';
-import CustomWebView from '../modules/CustomWebView';
+import { WebView } from 'react-native-webview';
+import ToastExample from '../modules/ToastExample';
+// import CustomWebView from '../modules/CustomWebView';
 
 const HTML = `
 <blockquote>
@@ -105,10 +111,16 @@ const HTML = `
 `;
 
 class App extends React.Component {
+  onPress = () => {
+    ToastExample.show('iiii', ToastExample.SHORT);
+  };
   render() {
     return (
       <SafeAreaView style={{ flex: 1 }}>
-        <CustomWebView style={{ flex: 1 }} source={{ html: HTML }} />
+        <TouchableOpacity onPress={this.onPress}>
+          <Text>hihi</Text>
+        </TouchableOpacity>
+        <WebView style={{ flex: 1 }} source={{ html: HTML }} />
       </SafeAreaView>
     );
   }
