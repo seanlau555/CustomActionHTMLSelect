@@ -19,6 +19,8 @@
 		52ACB0BBBBE9022DCD565E54 /* libPods-CustomActionHTMLSelect-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E66573F2C32357E71BE757E /* libPods-CustomActionHTMLSelect-tvOS.a */; };
 		ADC00A4088B58B7A26456291 /* libPods-CustomActionHTMLSelect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD14A1B226040A72A0AF10DC /* libPods-CustomActionHTMLSelect.a */; };
 		AF11FA8BC75BFB0289A982EC /* libPods-CustomActionHTMLSelectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DEBCE2DA4B682764586EFE /* libPods-CustomActionHTMLSelectTests.a */; };
+		F24BC90D23D09B7D001F3BE4 /* RCTCustomWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F24BC90C23D09B7D001F3BE4 /* RCTCustomWebView.m */; };
+		F24BC91123D09C09001F3BE4 /* RCTCustomWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F24BC91023D09C09001F3BE4 /* RCTCustomWebViewManager.m */; };
 		FD246D68B91E1A73B843B300 /* libPods-CustomActionHTMLSelect-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5ADF0FB330B03C51A824BB /* libPods-CustomActionHTMLSelect-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,11 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EFEBFCB043595629486742C4 /* Pods-CustomActionHTMLSelect-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomActionHTMLSelect-tvOS.release.xcconfig"; path = "Target Support Files/Pods-CustomActionHTMLSelect-tvOS/Pods-CustomActionHTMLSelect-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		F24BC90C23D09B7D001F3BE4 /* RCTCustomWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTCustomWebView.m; path = CustomActionHTMLSelect/RCTCustomWebView.m; sourceTree = "<group>"; };
+		F24BC90E23D09B94001F3BE4 /* RCTCustomWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCustomWebView.h; sourceTree = "<group>"; };
+		F24BC90F23D09C09001F3BE4 /* RCTCustomWebViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTCustomWebViewManager.h; path = CustomActionHTMLSelect/RCTCustomWebViewManager.h; sourceTree = "<group>"; };
+		F24BC91023D09C09001F3BE4 /* RCTCustomWebViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTCustomWebViewManager.m; path = CustomActionHTMLSelect/RCTCustomWebViewManager.m; sourceTree = "<group>"; };
+		F24BC91223D09D2E001F3BE4 /* RCTWebView+Custom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTWebView+Custom.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +139,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				F24BC90E23D09B94001F3BE4 /* RCTCustomWebView.h */,
+				F24BC90C23D09B7D001F3BE4 /* RCTCustomWebView.m */,
+				F24BC90F23D09C09001F3BE4 /* RCTCustomWebViewManager.h */,
+				F24BC91023D09C09001F3BE4 /* RCTCustomWebViewManager.m */,
+				F24BC91223D09D2E001F3BE4 /* RCTWebView+Custom.h */,
 			);
 			name = CustomActionHTMLSelect;
 			sourceTree = "<group>";
@@ -194,7 +206,6 @@
 				BB6A0AB1461BCAC171821764 /* Pods-CustomActionHTMLSelectTests.debug.xcconfig */,
 				78AC33069629224BF11B7CC2 /* Pods-CustomActionHTMLSelectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +320,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -577,6 +589,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F24BC91123D09C09001F3BE4 /* RCTCustomWebViewManager.m in Sources */,
+				F24BC90D23D09B7D001F3BE4 /* RCTCustomWebView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
